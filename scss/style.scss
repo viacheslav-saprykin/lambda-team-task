@@ -1,0 +1,87 @@
+// Mathematical library
+@use "sass:math";
+
+// Fonts
+@import "_fonts.scss";
+
+// Reset basic style
+@import "_reset.scss";
+
+// Functions
+@import "_functions.scss";
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > main {
+    flex-grow: 1;
+  }
+}
+
+body {
+  color: black;
+  background: rgb(60, 230, 232);
+  background: linear-gradient(0deg, rgba(60, 230, 232, 1) 0%, rgba(86, 158, 223, 0.774969362745098) 88%);
+  font-size: toRem(16);
+
+  padding: toRem(20);
+  margin: 0 auto;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+.header {
+  // .header__title
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-size: toRem(20);
+    font-weight: 700;
+    margin-bottom: toRem(30);
+  }
+}
+.main {
+  // .main__title
+  &__title {
+    font-weight: 500;
+  }
+
+  // .main__text
+  &__text {
+    font-weight: 500;
+  }
+
+  // .main__link
+  &__link {
+    font-weight: 500;
+    text-decoration: underline;
+    transition: all 0.3s;
+    &:not(:last-child) {
+      margin-bottom: toRem(8);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: orangered;
+        transform: scale(1.01);
+      }
+    }
+  }
+}
+.footer {
+  // .footer__title
+  &__title {
+    font-weight: 700;
+  }
+}
+.result {
+  font-weight: 500;
+}

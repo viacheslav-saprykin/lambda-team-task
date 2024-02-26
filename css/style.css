@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body {
+  color: black;
+  background: rgb(60, 230, 232);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(60, 230, 232)), color-stop(88%, rgba(86, 158, 223, 0.7749693627)));
+  background: linear-gradient(0deg, rgb(60, 230, 232) 0%, rgba(86, 158, 223, 0.7749693627) 88%);
+  font-size: 1rem;
+  padding: 1.25rem;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+.main__title {
+  font-weight: 500;
+}
+.main__text {
+  font-weight: 500;
+}
+.main__link {
+  font-weight: 500;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.main__link:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+@media (any-hover: hover) {
+  .main__link:hover {
+    color: orangered;
+    -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+}
+
+.footer__title {
+  font-weight: 700;
+}
+
+.result {
+  font-weight: 500;
+}

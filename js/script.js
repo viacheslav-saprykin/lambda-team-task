@@ -1,6 +1,6 @@
 // 1. Given by the task
 let inputStringOne = 'abc'; // the condition for task 1
-let inputStringTwo = 'abcd'; // the condition for task 1
+let inputStringTwo = 'abcd'; // the condition for task 2
 
 // 2. Calculations
 function externalFunction(isString) { // create a main function
@@ -18,7 +18,7 @@ function externalFunction(isString) { // create a main function
 
   generate(' ', isString, 0); // we call the generate function with the initial values: an empty string (''), a string to process (str), and the starting index (0).
 
-  return result; // for the function to work correctly, you need to return reult
+  return result; // for the function to work correctly, you need to return result
 }
 
 // 3. Result
